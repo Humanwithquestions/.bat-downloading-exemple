@@ -1,0 +1,13 @@
+@echo off
+cls
+
+echo Downloading sexy monkey picture...
+REM Using PowerShell to download the image
+powershell -Command "Invoke-WebRequest -Uri 'https://example.com/monkey.jpg' -OutFile 'C:\Users\%username%\Pictures\monkey.jpg'"
+
+echo Picture downloaded successfully.
+echo Opening the picture...
+REM Open the downloaded picture with the default image viewer
+start "" "C:\Users\%username%\Pictures\monkey.jpg"
+
+pause
